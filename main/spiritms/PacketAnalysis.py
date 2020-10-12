@@ -109,15 +109,14 @@ class PacketAnalysis(idaapi.action_handler_t):
                                                             Util.check_keyword_and_return(file[arr_index + 1], False))
                     if len(decodes_in_if) > 0:
                         check_next_line = True
-                        lines_to_skip += 1
-                    else:
-                        check_next_line = False
+                        lines_to_skip += 2
                 elif check_next_line:  # if we are in the scope of an if, find when it ends
                     i = 1
                     while file[arr_index + i] != "  }\n":
                         decodes_in_if = Util.add_decode_to_list(decodes_in_if, file[arr_index + i])
                         lines_to_skip += 1
                         i += 1
+                    lines_to_skip += 1
                 in_if_statement = check_next_line
 
             if len(decodes_in_if) > 0 and in_if_statement:
