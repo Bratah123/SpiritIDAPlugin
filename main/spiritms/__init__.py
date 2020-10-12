@@ -44,7 +44,15 @@ KEYWORDS = [ # used to check in the files
     "runnergamerecord::decode",
     "characterdata::decodetextequipinfo",
     "do\n",
-    "while"
+    "while",
+    "secondarystat::decodeforlocal",
+    "userselectandroid::decode",
+    "attackhit::decode",
+    "attackposition::decode",
+    "cinpacket::decode_double",
+    "quickmoveinfo::decode",
+    "cfootholdmoveinfo::decode",
+    "mirrordungeondisplay::decode"
 ]
 
 KEYWORDS_PRINT = [ # used to print out to console for neatness
@@ -84,5 +92,13 @@ KEYWORDS_PRINT = [ # used to print out to console for neatness
     "RunnerGameRecord::Decode()",
     "CharacterData::DecodeTextEquipInfo()",
     "do:",
-    "while()"
+    "while()",
+    "SecondaryStat::DecodeForLocal()",
+    "UserSelectAndroid::Decode()",
+    "AttackHit::Decode()",
+    "AttackPosition::Decode()",
+    "CInPacket::decode_double()",
+    "QuickMoveInfo::Decode()",
+    "CFootHoldMoveInfo::Decode()",
+    "MirrorDungeonDisplay::Decode()"
 ]
