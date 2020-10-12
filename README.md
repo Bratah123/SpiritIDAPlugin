@@ -1,5 +1,5 @@
 # SpiritIDAPlugin
-This Plugin uses the business logic from MaplePacketPuller project and therefore inherits any features or known problems from it.
+This Plugin utilizes the business logic from [MaplePacketPuller](https://github.com/Bratah123/MaplePacketPuller) project and therefore inherits any features or known problems from it.
 
 
 Author: Brandon Nguyen
