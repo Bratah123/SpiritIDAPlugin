@@ -8,7 +8,7 @@ Author: Brandon Nguyen
   - Automatically search for all OutPacket Headers.
   - Automatically search for InPacket Structures
 
-# Instructions for use:
+# Instructions for Use:
   - Drag the following contents of the `main` directory and drag it into `plugins` directory located in your main IDA folder.
     - change _init_.py's directory constants for the image to where SpiritMS.png is (located in the `spiritms` directory).
   - Now run IDA and a "Succesfully Loaded message" should appear in your output window!
