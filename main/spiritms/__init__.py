@@ -1,0 +1,88 @@
+# Some global Directories, make sure to change it to work with your directories
+
+PIC_DIR = 'C:\Program Files\IDA 7.0\plugins\spiritms\SpiritMS.png'
+FUNC_DIR = 'C:/SpiritIDA/Functions'
+FUNC_OUT_DIR = 'C:/SpiritIDA/FuncOutput'
+
+# constant arrays that store keywords to look for in the IDA PseudoCode
+# KEYWORDS and KEYWORDS_PRINT have to be the same length and ARE in order
+
+KEYWORDS = [ # used to check in the files
+    "decode1",
+    "decode2",
+    "decode4",
+    "decode8",
+    "decodestr",
+    "if",
+    "else",
+    "decodebuffer",
+    "cfieldcustom::decode",
+    "starplanetrank::decode",
+    "characterdata::decode",
+    "cwvscontext::decodestarplanetroundinfo",
+    "cuser::decodetextequipinfo",
+    "cuser::decodefreezehoteventinfo",
+    "cuser::decodeeventbestfriendinfo",
+    "avatardata::decode",
+    "characterstat::decode",
+    "gw_monsterbattleladder_userinfo::decode",
+    "gw_monsterbattlerankinfo::decode",
+    "itemslotbase::decode",
+    "nonbpequip::decode",
+    "virtualequipinventory::decode",
+    "bagdata::decode",
+    "itempotslot::decode",
+    "avatarlook::decode",
+    "wildhunterinfo::decode",
+    "zeroinfo::decode",
+    "inviteinfo::decodemonsterlifeinviteinfo",
+    "returneffectinfo::decode",
+    "dressupinfo::decode",
+    "farm_potential::decode",
+    "farmuserinfo::decode",
+    "memorialcubeinfo::decode",
+    "runnergamerecord::decode",
+    "characterdata::decodetextequipinfo",
+    "do\n",
+    "while"
+]
+
+KEYWORDS_PRINT = [ # used to print out to console for neatness
+    "CInPacket::Decode1()",
+    "CInPacket::Decode2()",
+    "CInPacket::Decode4()",
+    "CInPacket::Decode8()",
+    "CInPacket::DecodeStr()",
+    "if:",
+    "else:",
+    "CInPacket::DecodeBuffer()",
+    "CFieldCustom::Decode()",
+    "CUser::StarPlanetRank::Decode()",
+    "CharacterData::Decode()",
+    "CWvsContext::DecodeStarPlanetRoundInfo()",
+    "CUser::DecodeTextEquipInfo()",
+    "CUser::DecodeFreezeHotEventInfo()",
+    "CUser::DecodeEventBestFriendInfo()",
+    "AvatarData::Decode()",
+    "GW_CharacterStat::Decode()",
+    "GW_MonsterBattleLadder_UserInfo::Decode()",
+    "GW_MonsterBattleRankInfo::Decode()",
+    "ItemSlotBase::Decode()",
+    "NonBPEquip::Decode()",
+    "VirtualEquipInventory::Decode()",
+    "BagData::Decode()",
+    "ItemPotSlot::Decode()",
+    "AvatarLook::Decode()",
+    "WildHunterInfo::Decode()",
+    "ZeroInfo::Decode()",
+    "InviteInfo::DecodeMonsterLifeInviteInfo()",
+    "ReturnEffectInfo::Decode()",
+    "DressUpInfo::Decode()",
+    "FarmPotential::Decode()",
+    "FarmUserInfo::Decode()",
+    "MemorialCubeInfo::Decode()",
+    "RunnerGameRecord::Decode()",
+    "CharacterData::DecodeTextEquipInfo()",
+    "do:",
+    "while()"
+]
