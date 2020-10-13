@@ -21,7 +21,9 @@ Author: Brandon Nguyen
 
 # Gallery
   - Utilities:
+  
   ![Functions](https://cdn.discordapp.com/attachments/746519006961336370/765372370286018570/2527374f1c610873caa8baccaef1314f.png)
   
   - Outputs:
+  
   ![Out](https://cdn.discordapp.com/attachments/746519006961336370/765372958281170944/f982f56456131a78fb51a885d622f842.png)
