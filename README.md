@@ -25,5 +25,14 @@ Author: Brandon Nguyen
   ![Functions](https://cdn.discordapp.com/attachments/746519006961336370/765372370286018570/2527374f1c610873caa8baccaef1314f.png)
   
   - Outputs:
-  
-  ![Out](https://cdn.discordapp.com/attachments/746519006961336370/765372958281170944/f982f56456131a78fb51a885d622f842.png)
+    
+    -Packet Analysis:
+      ![Out](https://cdn.discordapp.com/attachments/746519006961336370/765372958281170944/f982f56456131a78fb51a885d622f842.png)
+      
+    -InHeader Analysis:
+      ![InHeader](https://cdn.discordapp.com/attachments/746519006961336370/765373302822273074/6ba9043852813e3dd132dd7ce22b822d.png)
+      
+    -OutPacket Info:
+      ![OutPacket](https://cdn.discordapp.com/attachments/746519006961336370/765373520351723520/429e755fe5f3c7d7a6ac558a1a340747.png)
+    
+    
