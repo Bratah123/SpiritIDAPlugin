@@ -13,7 +13,7 @@ Author: Brandon Nguyen
   - Open any function in notepad for easier manual analysis.
 
 # Instructions for Use
-  - NOTE: The plugin is assuming you have all the `decode` functions named.
+  - NOTE: The plugin is assuming you have all the `decode` functions named in the function you'd like to analyze (same for OutPacket).
     - If a decode function seems not to appear, you should check `init.py` and add it to KEYWORD and KEYWORD_PRINT arrays accordingly.
   - Drag the following contents of the `main` directory and drag it into `plugins` directory located in your main IDA folder.
     - change _init_.py's directory constants for the image to where SpiritMS.png is (located in the `spiritms` directory).
