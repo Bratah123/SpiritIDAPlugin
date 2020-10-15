@@ -4,7 +4,10 @@ import time
 import idaapi
 
 class OutPacketAnalysis(idaapi.action_handler_t):
-
+    """
+        A class that searches for "encode" functions and 
+        prints them out to console
+    """
     def __init__(self):
         idaapi.action_handler_t.__init__(self)
         self._function = []
@@ -14,7 +17,7 @@ class OutPacketAnalysis(idaapi.action_handler_t):
         self.get_all_encodes()
         return 1
     
-        
+    
     def update(self, ctx): # Always Avaliable
         return idaapi.AST_ENABLE_ALWAYS
         

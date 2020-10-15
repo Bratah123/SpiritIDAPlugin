@@ -4,6 +4,10 @@ import time
 import idaapi
 
 class PacketAnalysis(idaapi.action_handler_t):
+    """
+        Same functionality as MaplePacketPuller Logic
+        on github github.com/bratah123
+    """
 
     def __init__(self):
         idaapi.action_handler_t.__init__(self)

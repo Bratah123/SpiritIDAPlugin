@@ -10,6 +10,7 @@ import ida_funcs
 from spiritms import PIC_DIR, FUNC_DIR, FUNC_OUT_DIR
 from spiritms.InHeader import InHeaderHandler
 from spiritms.Util import Util
+from spiritms.FileOpener import FileOpener
 from spiritms.PacketAnalysis import PacketAnalysis
 from spiritms.OutPacketInfo import OutPacketAnalysis
    
@@ -24,10 +25,12 @@ class Hooks(idaapi.UI_Hooks):
         idaapi.attach_action_to_popup(form, popup, "my:InHeader", "Rename global items", idaapi.SETMENU_APP)
         idaapi.attach_action_to_popup(form, popup, "my:PacketStruct", "Rename global items", idaapi.SETMENU_APP)
         idaapi.attach_action_to_popup(form, popup, "my:OutPacket", "Rename global items", idaapi.SETMENU_APP)
+        idaapi.attach_action_to_popup(form, popup, "my:OpenFile", "Rename global items", idaapi.SETMENU_APP)
         
         
 class SpiritPlugin(idaapi.plugin_t):
-
+    
+    # Some options to be configured 
     flags = idaapi.PLUGIN_FIX
     comment = "Packet Structure Analyzer"
     
@@ -36,6 +39,8 @@ class SpiritPlugin(idaapi.plugin_t):
     wanted_hotkey = "Shift-Ctrl-Q"
     
     def __init__(self, *args, **kwargs):
+        # Main entry for the plugin 
+        # When plugin is hooked every function here will be initialized
         print("[SPIRIT] SpiritMS IDA Plugin succesfully loaded")
         idaapi.plugin_t.__init__(self)
         icon_data = str(open(PIC_DIR, "rb").read())
@@ -55,9 +60,13 @@ class SpiritPlugin(idaapi.plugin_t):
         
         
     def run(self, arg):
+        """
+            When they click on the SpiritMS IDA in the plugin quick
+            select, it will display this message
+        """
         Util.clear_output_window()
         Util.create_func_name()
-        print("[SPIRIT] This is the SpiritMS IDA Plugin. Our plugin allows you to analyze packet structures and find InHeaders!\nShortcuts:\nShift + Ctrl + Q (Info)\nCtrl + H (Analyze InHeaders)\n")
+        print("[SPIRIT] This is the SpiritMS IDA Plugin. Our plugin allows you to analyze packet structures and find InHeaders!\nMake sure to read the github for new updates!")
         
         
     def term(self):
@@ -65,7 +74,9 @@ class SpiritPlugin(idaapi.plugin_t):
         
         
     def load_actions(self):
-    
+        
+        # Loading all icons and functions in right click context menu
+        
         action_desc = idaapi.action_desc_t(
         'my:InHeader',   # The action name. This acts like an ID and must be unique
         '[Spirit] Analyze InHeader Ops',  # The action text.
@@ -90,18 +101,30 @@ class SpiritPlugin(idaapi.plugin_t):
         'Provides some information on a given OutPacket function.',
         self.icon_id)
         
+        open_file = idaapi.action_desc_t(
+        'my:OpenFile',
+        '[Spirit] Open function in notepad',
+        FileOpener(),
+        'Ctrl+Shift+W',
+        'Lets you open the pseudocode in notepad environment.',
+        self.icon_id)
+        
         idaapi.register_action(packet_analysis)
         idaapi.register_action(action_desc)
         idaapi.register_action(out_packet_analysis)
+        idaapi.register_action(open_file)
         
         form = idaapi.get_current_tform()
         idaapi.attach_action_to_popup(form, None, "my:InHeader", None)
         idaapi.attach_action_to_popup(form, None, "my:PacketStruct", None)
         idaapi.attach_action_to_popup(form, None, "my:OutPacket", None)
+        idaapi.attach_action_to_popup(form, None, "my:OpenFile", None)
         
     
     def load_folders(self):  
-
+        
+        # Creating a folder for functions if it doesn't already exist
+        
         if not path.exists(FUNC_DIR):
           try:
             os.makedirs(FUNC_DIR)
