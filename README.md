@@ -9,7 +9,8 @@ Author: Brandon Nguyen
   - Writes down function to an output text file.
   - Writes down analyzed packet to an output text file.
   - Automatically search for all OutPacket Headers.
-  - Automatically search for InPacket Structures
+  - Automatically search for InPacket Structures.
+  - Open any function in notepad for easier manual analysis.
 
 # Instructions for Use
   - NOTE: The plugin is assuming you have all the `decode` functions named.
@@ -22,7 +23,7 @@ Author: Brandon Nguyen
 # Gallery
   - Utilities:
   
-  ![Functions](https://cdn.discordapp.com/attachments/746519006961336370/765372370286018570/2527374f1c610873caa8baccaef1314f.png)
+  ![Functions](https://cdn.discordapp.com/attachments/631249406775132182/766328981460877322/6116524528cc2708c4f76d8727294831.png)
   
   - Outputs:
     
