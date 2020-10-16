@@ -1,6 +1,7 @@
 # Some global Directories, make sure to change it to work with your directories
+import os
 
-PIC_DIR = 'C:\Program Files\IDA 7.0\plugins\spiritms\SpiritMS.png'
+PIC_DIR = os.path.dirname(os.path.abspath(__file__)) + '/SpiritMS.png'
 FUNC_DIR = 'C:/SpiritIDA/Functions'
 FUNC_OUT_DIR = 'C:/SpiritIDA/FuncOutput'
 
