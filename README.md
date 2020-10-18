@@ -6,6 +6,11 @@ Author: Brandon Nguyen
 
 Any questions relating to setup or any errors can be redirected to `Not Brandon #4444`.
 
+# Tech Stack
+  - IDA Pro 7.0 (Target)
+  - Python 2.7 (Native to IDAPython)
+  - Notepad++ (Used for developing)
+    - Note PyCharm does work too, but autocomplete and weird syntax highlighting was distracting.
 
 # Features
   - Ability to analyze any function's Packet Structure.
