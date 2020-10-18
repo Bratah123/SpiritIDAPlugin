@@ -4,6 +4,9 @@ This Plugin utilizes the business logic from [MaplePacketPuller](https://github.
 
 Author: Brandon Nguyen
 
+Any questions relating to setup or any errors can be redirected to `Not Brandon #4444`.
+
+
 # Features
   - Ability to analyze any function's Packet Structure.
   - Writes down function to an output text file.
