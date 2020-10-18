@@ -10,7 +10,7 @@ Author: Brandon Nguyen
   - Writes down analyzed packet to an output text file.
   - Automatically search for all OutPacket Headers.
   - Automatically search for InPacket Structures.
-  - Open any function in notepad for easier manual analysis.
+  - Open any function in notepad for easier manual analysis (creates a txt file automatically).
 
 # Instructions for Use
   - NOTE: The plugin is assuming you have all the `decode` functions named in the function you'd like to analyze (same for OutPacket).
