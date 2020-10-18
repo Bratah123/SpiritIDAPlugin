@@ -19,7 +19,8 @@ Any questions relating to setup or any errors can be redirected to `Not Brandon 
   - NOTE: The plugin is assuming you have all the `decode` functions named in the function you'd like to analyze (same for OutPacket).
     - If a decode function seems not to appear, you should check `init.py` and add it to KEYWORD and KEYWORD_PRINT arrays accordingly.
   - Drag the following contents of the `main` directory and drag it into `plugins` directory located in your main IDA folder.
-    - change _init_.py's directory constants for the image to where SpiritMS.png is (located in the `spiritms` directory).
+    - ~~change _init_.py's directory constants for the image to where SpiritMS.png is (located in the `spiritms` directory).~~
+    - Fixed as of commit `ff4249e2a696aa0a4cafc740b57239a59e7fa656`
   - Now run IDA and a "Succesfully Loaded message" should appear in your output window!
   - Right click functions to access the tools provided by the plugin!
 
