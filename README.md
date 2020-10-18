@@ -1,10 +1,11 @@
 # SpiritIDAPlugin
 This Plugin utilizes the business logic from [MaplePacketPuller](https://github.com/Bratah123/MaplePacketPuller) project and therefore inherits any features or known problems from it.
 
+Open source as of: 10/18/2020
 
 Author: Brandon Nguyen
 
-Any questions relating to setup or any errors can be redirected to `Not Brandon #4444`.
+Any questions relating to setup or any errors can be redirected to `Not Brandon #4444`. Make sure to check github for any new updates to the plugin.
 
 # Tech Stack
   - IDA Pro 7.0 (Target)
