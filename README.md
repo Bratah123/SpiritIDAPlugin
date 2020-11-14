@@ -21,6 +21,10 @@ Any questions relating to setup or any errors can be redirected to `Not Brandon 
   - Automatically search for InPacket Structures.
   - Open any function in notepad for easier manual analysis (creates a txt file automatically).
 
+# Note
+   - The Packet Structure analysis is best left to packets that do not call any functions that will call more decodes (smaller packets would work best)
+   - Opening function in Notepad will save it to a text file, located in C: Drive named `Spirit`
+
 # Instructions for Use
   - NOTE: The plugin is assuming you have all the `decode` functions named in the function you'd like to analyze (same for OutPacket).
     - If a decode function seems not to appear, you should check `init.py` and add it to KEYWORD and KEYWORD_PRINT arrays accordingly.
