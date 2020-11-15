@@ -23,7 +23,7 @@ Any questions relating to setup or any errors can be redirected to `Not Brandon 
 
 # Note
    - The Packet Structure analysis is best left to packets that do not call any functions that will call more decodes (smaller packets would work best)
-   - Opening function in Notepad will save it to a text file, located in C: Drive named `Spirit`
+   - Opening function in Notepad will save it to a text file, located in C: Drive named `SpiritIDA`
 
 # Instructions for Use
   - NOTE: The plugin is assuming you have all the `decode` functions named in the function you'd like to analyze (same for OutPacket).
