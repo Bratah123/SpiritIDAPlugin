@@ -9,7 +9,7 @@ Any questions relating to setup or any errors can be redirected to `Not Brandon 
 
 # Tech Stack
   - IDA Pro 7.0 (Target)
-    - Note: This plugin is currently not working in IDA 7.5Pro 
+    - Note: This plugin is currently not working in IDA 7.5 Pro 
   - Python 2.7 (Native to IDAPython)
   - Notepad++ (Used for developing)
     - Note PyCharm does work too, but autocomplete and weird syntax highlighting was distracting.
