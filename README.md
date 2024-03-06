@@ -36,20 +36,19 @@ Any questions relating to setup or any errors can be redirected to `Not Brandon 
 # Gallery
   - Utilities:
   
-  ![Functions](https://cdn.discordapp.com/attachments/631249406775132182/766328981460877322/6116524528cc2708c4f76d8727294831.png)
+  ![Function](https://github.com/Bratah123/SpiritIDAPlugin/assets/58405975/f5e721cf-61eb-4002-9762-bfcd566116c9)
   
   - Outputs:
     
     -Packet Analysis:
     
-      ![Out](https://cdn.discordapp.com/attachments/746519006961336370/765372958281170944/f982f56456131a78fb51a885d622f842.png)
+      ![Out](https://github.com/Bratah123/SpiritIDAPlugin/assets/58405975/078b5639-bade-464a-99b5-c9825f85813c)
       
     -InHeader Analysis:
     
-      ![InHeader](https://cdn.discordapp.com/attachments/746519006961336370/765373302822273074/6ba9043852813e3dd132dd7ce22b822d.png)
-      
+      ![InHeader](https://github.com/Bratah123/SpiritIDAPlugin/assets/58405975/31e80460-7f8b-4dc2-a1fb-e9d9ecce2def)
+
     -OutPacket Info:
     
-      ![OutPacket](https://cdn.discordapp.com/attachments/746519006961336370/765373520351723520/429e755fe5f3c7d7a6ac558a1a340747.png)
-    
+      ![OutPacket](https://github.com/Bratah123/SpiritIDAPlugin/assets/58405975/8f5cce49-9a17-4195-9ab9-4407351f8899)
     
